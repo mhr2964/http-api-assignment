@@ -1,0 +1,26 @@
+{
+  "name": "http-api-assignment",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/mhr2964/http-api-assignment#readme",
+  "bugs": {
+    "url": "https://github.com/mhr2964/http-api-assignment/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mhr2964/http-api-assignment.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "pretest": "npx eslint"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.0.0",
+    "globals": "^17.3.0"
+  }
+}

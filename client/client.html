@@ -5,7 +5,20 @@
   <link rel="stylesheet" type="text/css" href="/style.css">
   
   <script>
+    const init = () => {
+      const button = document.getElementById("send");
+      const page = document.getElementById("page");
+      const type = document.getElementById("type");
+      button.onclick = async () => {
+        console.log(page.value);
+        let response = await fetch(page.value, {
+          method: "GET",
+          headers: { 'Accept': type.value }
+        });
+      }; 
+    };
 
+    window.onload = init;
   </script>
 </head>
 <body>
